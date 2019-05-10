@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "name": "cra-monorepo",
+  "builds": [
+    { "src": "api/time/*.js", "use": "@now/node" },
+    {
+      "src": "www/package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "build" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/static/(.*)",
+      "headers": { "cache-control": "s-maxage=31536000,immutable" },
+      "dest": "/www/static/$1"
+    },
+    { "src": "/favicon.ico", "dest": "/www/favicon.ico" },
+    {
+      "src": "/asset-manifest.json",
+      "dest": "/www/asset-manifest.json"
+    },
+    { "src": "/manifest.json", "dest": "/www/manifest.json" },
+    {
+      "src": "/precache-manifest.(.*)",
+      "dest": "/www/precache-manifest.$1"
+    },
+    {
+      "src": "/service-worker.js",
+      "headers": { "cache-control": "s-maxage=0" },
+      "dest": "/www/service-worker.js"
+    },
+    {
+      "src": "/(.*)",
+      "headers": { "cache-control": "s-maxage=0" },
+      "dest": "/www/index.html"
+    }
+  ]
+}
