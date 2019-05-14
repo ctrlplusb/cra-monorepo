@@ -4,7 +4,7 @@ import "./App.css";
 const App: React.FC = () => {
   const [serverDate, setServerDate] = useState();
   useEffect(() => {
-    fetch("/api/time")
+    fetch("/api/utils/time.ts")
       .then(response => response.text())
       .then(text => setServerDate(text));
   }, [setServerDate]);
