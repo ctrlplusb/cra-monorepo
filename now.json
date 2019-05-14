@@ -5,7 +5,7 @@
     { "src": "api/time/*.js", "use": "@now/node" },
     {
       "src": "www/package.json",
-      "use": "@now/static-build",
+      "use": "@now/static-build@canary",
       "config": { "distDir": "build" }
     }
   ],
