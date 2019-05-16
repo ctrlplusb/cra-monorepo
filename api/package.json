@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "api",
+  "version": "1.0.0",
+  "dependencies": {
+    "@ctrlplusb/lib": "1.0.0"
+  }
+}

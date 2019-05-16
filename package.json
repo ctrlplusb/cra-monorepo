@@ -1,6 +1,13 @@
 {
   "private": true,
+  "workspaces": [
+    "api",
+    "lib",
+    "www"
+  ],
   "devDependencies": {
-    "prettier": "^1.17.0"
+    "@types/node": "^12.0.1",
+    "prettier": "^1.17.0",
+    "typescript": "3.4.5"
   }
 }
