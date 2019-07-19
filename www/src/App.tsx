@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 
-import fruits from "@ctrlplusb/lib/fruit";
+import fruits from "../../node/lib/fruit";
 
 const App: React.FC = () => {
   const [serverDate, setServerDate] = useState();
@@ -11,15 +11,19 @@ const App: React.FC = () => {
       .then(text => setServerDate(text));
   }, [setServerDate]);
 
+  const [serverFruits, setServerFruits] = useState();
+  useEffect(() => {
+    fetch("/api/utils/fruits")
+      .then(response => response.text())
+      .then(text => setServerFruits(text));
+  }, [setServerFruits]);
+
   return (
     <div className="App">
       <header className="App-header">
-        <p>The server time is {serverDate}</p>
-        <ul>
-          {fruits.map((fruit, idx) => (
-            <li key={idx}>{fruit}</li>
-          ))}
-        </ul>
+        <p>3 The server time is {serverDate}</p>
+        <p>The server fruits are {serverFruits}</p>
+        <p>The client fruits are {JSON.stringify(fruits)}</p>
       </header>
     </div>
   );

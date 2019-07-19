@@ -2,7 +2,7 @@
   "version": 2,
   "name": "cra-monorepo",
   "builds": [
-    { "src": "api/**/*.ts", "use": "@now/node" },
+    { "src": "node/api/**/*.ts", "use": "@now/node" },
     {
       "src": "www/package.json",
       "use": "@now/static-build",
@@ -12,7 +12,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/api/$1.ts"
+      "dest": "/node/api/$1.ts"
     },
     {
       "src": "/static/(.*)",

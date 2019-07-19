@@ -1,8 +1,0 @@
-{
-  "private": true,
-  "name": "@ctrlplusb/lib",
-  "version": "1.0.0",
-  "files": [
-    "*.ts"
-  ]
-}
