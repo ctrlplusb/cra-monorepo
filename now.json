@@ -30,6 +30,14 @@
       "dest": "/www/precache-manifest.$1"
     },
     {
+      "src": "/sockjs-node/(.*)",
+      "dest": "/www/sockjs-node/$1"
+    },
+    {
+      "src": "/(.*).hot-update.js",
+      "dest": "/www/$1.hot-update.js"
+    },
+    {
       "src": "/service-worker.js",
       "headers": { "cache-control": "s-maxage=0" },
       "dest": "/www/service-worker.js"

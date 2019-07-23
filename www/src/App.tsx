@@ -21,7 +21,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <p>3 The server time is {serverDate}</p>
+        <p>The server time is {serverDate}</p>
         <p>The server fruits are {serverFruits}</p>
         <p>The client fruits are {JSON.stringify(fruits)}</p>
       </header>
