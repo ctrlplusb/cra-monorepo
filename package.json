@@ -3,5 +3,10 @@
   "workspaces": [
     "node",
     "www"
-  ]
+  ],
+  "scripts": {
+    "dev:node": "now dev -p 3001 node",
+    "dev:www": "cd www && yarn start",
+    "dev": "yarn dev:node & yarn dev:www"
+  }
 }

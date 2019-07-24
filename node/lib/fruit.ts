@@ -1,1 +1,1 @@
-export default ["apple", "banana", "pear", "litchi", "s"];
+export default ["apple", "banana", "pear", "litchi", "grape"];
