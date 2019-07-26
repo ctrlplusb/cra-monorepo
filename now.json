@@ -35,6 +35,31 @@
       "dest": "/www/service-worker.js"
     },
     {
+      "src": "/sockjs-node/(.*)",
+      "headers": { "cache-control": "s-maxage=0" },
+      "dest": "/www/sockjs-node/$1"
+    },
+    {
+      "src": "/__webpack_dev_server__/(.*)",
+      "headers": { "cache-control": "s-maxage=0" },
+      "dest": "/www/__webpack_dev_server__/$1"
+    },
+    {
+      "src": "/(.*).hot-update.js.map",
+      "headers": { "cache-control": "s-maxage=0" },
+      "dest": "/www/$1.hot-update.js.map"
+    },
+    {
+      "src": "/(.*).hot-update.js",
+      "headers": { "cache-control": "s-maxage=0" },
+      "dest": "/www/$1.hot-update.js"
+    },
+    {
+      "src": "/(.*).hot-update.json",
+      "headers": { "cache-control": "s-maxage=0" },
+      "dest": "/www/$1.hot-update.json"
+    },
+    {
       "src": "/(.*)",
       "headers": { "cache-control": "s-maxage=0" },
       "dest": "/www/index.html"

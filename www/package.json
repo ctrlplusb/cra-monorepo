@@ -2,7 +2,6 @@
   "private": true,
   "name": "website",
   "version": "0.1.0",
-  "proxy": "http://localhost:3001",
   "engines": {
     "node": ">=10"
   },
@@ -20,8 +19,7 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "now-dev": "echo \"skipping BROWSER=none react-app-rewired start\"",
-    "now-build": "react-app-rewired build"
+    "now-dev": "react-app-rewired start"
   },
   "eslintConfig": {
     "extends": "react-app"
