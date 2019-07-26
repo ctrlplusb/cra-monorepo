@@ -13,14 +13,19 @@ This repository is an example of how you can set up a Zeit
 
 ## Getting started
 
-To bootstrap the project and begin development run the following commands:
+Bootstrap:
 
 ```bash
 yarn install
-yarn dev
 ```
 
-To deploy:
+Development:
+
+```bash
+now dev
+```
+
+Deployment:
 
 ```bash
 now
