@@ -1,0 +1,6 @@
+**/*.test.ts
+**/*.spec.ts
+.vscode
+.storybook
+/documentation
+/support

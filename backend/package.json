@@ -8,6 +8,7 @@
   "devDependencies": {
     "@types/node": "^12.6.8",
     "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
     "typescript": "3.5.3"
   }
 }

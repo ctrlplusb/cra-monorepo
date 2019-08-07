@@ -2,9 +2,9 @@
   "version": 2,
   "name": "cra-monorepo",
   "builds": [
-    { "src": "node/api/**/*.ts", "use": "@now/node" },
+    { "src": "backend/api/**/*.ts", "use": "@now/node" },
     {
-      "src": "www/package.json",
+      "src": "frontend/package.json",
       "use": "@now/static-build",
       "config": { "distDir": "build" }
     }
@@ -12,57 +12,57 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/node/api/$1.ts"
+      "dest": "/backend/api/$1.ts"
     },
     {
       "src": "/static/(.*)",
       "headers": { "cache-control": "s-maxage=31536000,immutable" },
-      "dest": "/www/static/$1"
+      "dest": "/frontend/static/$1"
     },
-    { "src": "/favicon.ico", "dest": "/www/favicon.ico" },
+    { "src": "/favicon.ico", "dest": "/frontend/favicon.ico" },
     {
       "src": "/asset-manifest.json",
-      "dest": "/www/asset-manifest.json"
+      "dest": "/frontend/asset-manifest.json"
     },
-    { "src": "/manifest.json", "dest": "/www/manifest.json" },
+    { "src": "/manifest.json", "dest": "/frontend/manifest.json" },
     {
       "src": "/precache-manifest.(.*)",
-      "dest": "/www/precache-manifest.$1"
+      "dest": "/frontend/precache-manifest.$1"
     },
     {
       "src": "/service-worker.js",
       "headers": { "cache-control": "s-maxage=0" },
-      "dest": "/www/service-worker.js"
+      "dest": "/frontend/service-worker.js"
     },
     {
-      "src": "/sockjs-node/(.*)",
+      "src": "/sockjs-backend/(.*)",
       "headers": { "cache-control": "s-maxage=0" },
-      "dest": "/www/sockjs-node/$1"
+      "dest": "/frontend/sockjs-backend/$1"
     },
     {
       "src": "/__webpack_dev_server__/(.*)",
       "headers": { "cache-control": "s-maxage=0" },
-      "dest": "/www/__webpack_dev_server__/$1"
+      "dest": "/frontend/__webpack_dev_server__/$1"
     },
     {
       "src": "/(.*).hot-update.js.map",
       "headers": { "cache-control": "s-maxage=0" },
-      "dest": "/www/$1.hot-update.js.map"
+      "dest": "/frontend/$1.hot-update.js.map"
     },
     {
       "src": "/(.*).hot-update.js",
       "headers": { "cache-control": "s-maxage=0" },
-      "dest": "/www/$1.hot-update.js"
+      "dest": "/frontend/$1.hot-update.js"
     },
     {
       "src": "/(.*).hot-update.json",
       "headers": { "cache-control": "s-maxage=0" },
-      "dest": "/www/$1.hot-update.json"
+      "dest": "/frontend/$1.hot-update.json"
     },
     {
       "src": "/(.*)",
       "headers": { "cache-control": "s-maxage=0" },
-      "dest": "/www/index.html"
+      "dest": "/frontend/index.html"
     }
   ]
 }

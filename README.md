@@ -1,15 +1,17 @@
 # cra-monorepo
 
-This repository is an example of how you can set up a Zeit
-[Now 2.0](https://zeit.co/now) monorepo containing the following:
+This is a starter for a monorepo Create React App + API endpoints aimed at being deployed to the Zeit [Now 2.0](https://zeit.co/now) cloud platform.
 
 ## Features
 
 - Yarn + Yarn workspaces
 - Create React App
-- Node based lambdas
+- React Hot Loader
 - Fully TypeScript'ed
 - Hot module reloading
+- ESLint with Typescript parser
+- Jest
+- Storybook
 
 ## Getting started
 
@@ -30,11 +32,3 @@ Deployment:
 ```bash
 now
 ```
-
-## Create React App Notes
-
-I have rewired the CRA configuration to include the following features:
-
-- The ability to import modules outside of the scope of the CRA project. This
-  allows me to more easily share code between the front and backend.
-- React Hot Loader support
