@@ -16,10 +16,9 @@
     "typescript": "3.5.3"
   },
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "build": "SKIP_PREFLIGHT_CHECK=true react-app-rewired build",
     "test": "react-app-rewired test",
-    "now-dev": "react-app-rewired start",
+    "now-dev": "BROWSER=none SKIP_PREFLIGHT_CHECK=true react-app-rewired start",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },
@@ -61,7 +60,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.8.0",
-    "babel-loader": "^8.0.6",
+    "babel-loader": "^8.0.5",
     "jest": "^24.8.0",
     "jest-environment-jsdom": "^24.8.0",
     "react-app-rewire-hot-loader": "^2.0.1",
