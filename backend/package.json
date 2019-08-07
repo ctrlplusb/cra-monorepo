@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "node",
+  "name": "backend",
   "version": "1.0.0",
   "engines": {
     "node": ">=10"
