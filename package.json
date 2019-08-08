@@ -6,6 +6,9 @@
     "frontend"
   ],
   "scripts": {
+    "deploy": "now",
+    "start": "now dev",
+    "storybook": "cd frontend && npm run storybook",
     "test:backend": "cd backend && npm run test",
     "test:frontend": "cd frontend && npm run test"
   },

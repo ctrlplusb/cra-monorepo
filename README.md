@@ -1,6 +1,8 @@
 # cra-monorepo
 
-This is a starter for a monorepo Create React App + API endpoints aimed at being deployed to the Zeit [Now 2.0](https://zeit.co/now) cloud platform.
+This is a starter for a Zeit [Now 2.0](https://zeit.co/now) based monorepo containing a Create React App frontend + Node lambda based backend.
+
+Example deployment: https://cra-monorepo.ctrlplusb.now.sh/
 
 ## Features
 
@@ -23,13 +25,31 @@ yarn install
 Development:
 
 ```bash
-now dev
+yarn start
 ```
 
 Deployment:
 
 ```bash
-now
+yarn deploy
+```
+
+Storybook:
+
+```bash
+yarn storybook
+```
+
+Test backend:
+
+```bash
+yarn test:backend
+```
+
+Test frontend:
+
+```bash
+yarn test:frontend
 ```
 
 ## Todo
