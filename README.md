@@ -16,11 +16,13 @@ Example deployment: https://cra-monorepo.ctrlplusb.now.sh/
 
 ## Getting started
 
-Bootstrap:
-
 ```bash
+git clone https://github.com/ctrlplusb/cra-monorepo
+cd cra-monorepo
 yarn install
 ```
+
+## Commands
 
 Development:
 
