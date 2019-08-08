@@ -7,7 +7,7 @@
   },
   "scripts": {
     "build": "SKIP_PREFLIGHT_CHECK=true react-app-rewired build",
-    "test": "react-app-rewired test",
+    "test": "SKIP_PREFLIGHT_CHECK=true react-app-rewired test",
     "now-dev": "BROWSER=none SKIP_PREFLIGHT_CHECK=true react-app-rewired start",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
@@ -64,6 +64,15 @@
     "react-docgen-typescript-loader": "^3.1.0",
     "react-docgen-typescript-webpack-plugin": "^1.1.0",
     "react-hot-loader": "^4.12.9",
+    "ts-jest": "^24.0.2",
     "typescript": "3.5.3"
+  },
+  "jest": {
+    "displayName": "frontend",
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "<projectDir>/tsconfig.test.json"
+      }
+    }
   }
 }

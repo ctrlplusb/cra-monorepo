@@ -8,7 +8,6 @@ This is a starter for a monorepo Create React App + API endpoints aimed at being
 - Create React App
 - React Hot Loader
 - Fully TypeScript'ed
-- Hot module reloading
 - ESLint with Typescript parser
 - Jest
 - Storybook
@@ -32,3 +31,7 @@ Deployment:
 ```bash
 now
 ```
+
+## Todo
+
+I've had to put in a workaround on the jest config for the CRA project so that .tsx files can be tested. Doing this breaks a root "jest projects" based configuration, so we are forced to run backend and frontend tests separately.

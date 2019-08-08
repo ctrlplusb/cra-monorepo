@@ -5,6 +5,10 @@
     "backend",
     "frontend"
   ],
+  "scripts": {
+    "test:backend": "cd backend && npm run test",
+    "test:frontend": "cd frontend && npm run test"
+  },
   "devDependencies": {
     "@types/node": "^12.7.0",
     "@typescript-eslint/eslint-plugin": "^1.13.0",
@@ -18,7 +22,6 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.6.1",
-    "jest": "^24.8.0",
     "prettier": "^1.18.2",
     "typescript": "3.5.3"
   },
