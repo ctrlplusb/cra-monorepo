@@ -13,6 +13,11 @@ Example deployment: https://cra-monorepo.ctrlplusb.now.sh/
 - Fully TypeScript'ed
 - Consistent ESLint with Typescript parser across entire codebase
 - Run Jest from the root
+- Prettier configuration
+
+## Recommendations
+
+Highly recommend using VSCode with the Prettier plugin. 🥰
 
 ## Getting started
 
