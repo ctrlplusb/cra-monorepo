@@ -5,9 +5,6 @@
   "engines": {
     "node": ">=10"
   },
-  "scripts": {
-    "test": "jest"
-  },
   "devDependencies": {
     "@types/jest": "^24.0.17",
     "@types/node": "^12.7.1",
