@@ -1,5 +1,6 @@
 import { hot } from 'react-hot-loader/root';
 import React, { useState, useEffect } from 'react';
+import appName from 'universal/app-name';
 import './App.css';
 
 const App: React.FC = () => {
@@ -13,6 +14,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>{appName}</h1>
         <p>The time on the server is {serverDate}</p>
       </header>
     </div>

@@ -3,7 +3,8 @@
   "name": "cra-monorepo",
   "workspaces": [
     "backend",
-    "frontend"
+    "frontend",
+    "universal"
   ],
   "scripts": {
     "deploy": "now",

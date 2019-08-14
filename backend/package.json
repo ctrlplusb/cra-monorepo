@@ -5,6 +5,9 @@
   "engines": {
     "node": ">=10"
   },
+  "dependencies": {
+    "universal": "^1.0.0"
+  },
   "devDependencies": {
     "@types/jest": "^24.0.17",
     "@types/node": "^12.7.1",

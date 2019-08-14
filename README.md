@@ -7,12 +7,12 @@ Example deployment: https://cra-monorepo.ctrlplusb.now.sh/
 ## Features
 
 - Yarn + Yarn workspaces
-- Create React App
-- React Hot Loader
+- Backend: Node lambdas
+- Frontend: Create React App with React Hot Loader and Storybook
+- Universal code (i.e. shared between frontend and backend)
 - Fully TypeScript'ed
-- ESLint with Typescript parser
-- Jest with "projects" configuration
-- Storybook
+- Consistent ESLint with Typescript parser across entire codebase
+- Run Jest from the root
 
 ## Getting started
 
