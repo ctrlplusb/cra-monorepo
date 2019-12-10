@@ -15,7 +15,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>1 {appName}</h1>
+        <h1>{appName}</h1>
         <p>The time on the server is {serverDate}</p>
         <p>The time on client is {currentTime()}</p>
       </header>
