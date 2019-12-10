@@ -1,4 +1,4 @@
-export default function currentTime() {
+export default function currentTime(): string {
   const now = new Date();
   return `${now
     .getHours()

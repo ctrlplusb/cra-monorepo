@@ -40,6 +40,16 @@
       "dest": "/frontend/sockjs-backend/$1"
     },
     {
+      "src": "/sockjs-node/(.*)",
+      "headers": { "cache-control": "s-maxage=0" },
+      "dest": "/frontend/sockjs-node/$1"
+    },
+    {
+      "src": "/sockjs-node",
+      "headers": { "cache-control": "s-maxage=0" },
+      "dest": "/frontend/sockjs-node"
+    },
+    {
       "src": "/__webpack_dev_server__/(.*)",
       "headers": { "cache-control": "s-maxage=0" },
       "dest": "/frontend/__webpack_dev_server__/$1"
