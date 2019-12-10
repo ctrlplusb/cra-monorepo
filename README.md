@@ -41,6 +41,12 @@ Deployment:
 yarn deploy
 ```
 
+Lint:
+
+```bash
+yarn lint
+```
+
 Storybook:
 
 ```bash
