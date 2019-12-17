@@ -1,4 +1,3 @@
-import { hot } from 'react-hot-loader/root';
 import React, { useState, useEffect } from 'react';
 import appName from 'universal/app-name';
 import currentTime from 'universal/current-time';
@@ -15,7 +14,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>{appName}</h1>
+        <h1>5. {appName}</h1>
         <p>The time on the server is {serverDate}</p>
         <p>The time on client is {currentTime()}</p>
       </header>
@@ -23,4 +22,4 @@ const App: React.FC = () => {
   );
 };
 
-export default process.env.NODE_ENV === 'development' ? hot(App) : App;
+export default App;

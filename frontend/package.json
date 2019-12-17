@@ -6,8 +6,8 @@
     "node": ">=10"
   },
   "scripts": {
-    "build": "SKIP_PREFLIGHT_CHECK=true react-app-rewired build",
     "now-dev": "BROWSER=none SKIP_PREFLIGHT_CHECK=true react-app-rewired start",
+    "build": "NODE_ENV=development SKIP_PREFLIGHT_CHECK=true react-app-rewired build",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },
@@ -33,6 +33,7 @@
     "@babel/core": "^7.7.5",
     "@babel/plugin-syntax-flow": "^7.7.4",
     "@hot-loader/react-dom": "^16.11.0",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.1.1",
     "@storybook/addon-a11y": "^5.2.8",
     "@storybook/addon-actions": "^5.2.8",
     "@storybook/addon-info": "^5.2.8",
@@ -42,9 +43,9 @@
     "@storybook/addons": "^5.2.8",
     "@storybook/react": "^5.2.8",
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
+    "@testing-library/react": "^9.4.0",
     "@types/jest": "^24.0.23",
-    "@types/node": "^12.12.17",
+    "@types/node": "^12.12.18",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
     "@types/storybook__addon-info": "^4.1.2",
@@ -57,11 +58,10 @@
     "customize-cra": "^0.9.1",
     "jest": "^24.9.0",
     "jest-environment-jsdom": "^24.9.0",
-    "react-app-rewire-hot-loader": "^2.0.1",
     "react-app-rewired": "^2.1.5",
     "react-docgen-typescript-loader": "^3.6.0",
     "react-docgen-typescript-webpack-plugin": "^1.1.0",
-    "react-hot-loader": "^4.12.18",
+    "react-refresh": "^0.7.0",
     "typescript": "3.7.3"
   },
   "jest": {

@@ -8,7 +8,7 @@ Example deployment: https://cra-monorepo.ctrlplusb.now.sh/
 
 - Yarn + Yarn workspaces
 - Backend: Node lambdas
-- Frontend: Create React App with React Hot Loader and Storybook
+- Frontend: Create React App with React Fast Refresh and Storybook
 - Universal code (i.e. shared between frontend and backend)
 - Fully TypeScript'ed
 - Consistent ESLint with Typescript parser across entire codebase
