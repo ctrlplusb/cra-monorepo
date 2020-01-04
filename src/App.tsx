@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import appName from 'universal/app-name';
-import currentTime from 'universal/current-time';
+import appName from '../universal/app-name';
+import currentTime from '../universal/current-time';
 import './App.css';
 
 const App: React.FC = () => {
-  const [serverDate, setServerDate] = useState();
+  const [serverDate, setServerDate] = useState<string>();
   useEffect(() => {
     fetch('/api/time')
       .then(response => response.text())

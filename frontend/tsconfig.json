@@ -1,6 +1,29 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "noEmit": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "plugins": [{
+      "name": "typescript-styled-plugin",
+      "validate": false
+    }],
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictPropertyInitialization": true,
     "module": "esnext",
     "moduleResolution": "node",
     "target": "es5"

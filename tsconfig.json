@@ -12,7 +12,7 @@
       "dom.iterable",
       "esnext"
     ],
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
     "noImplicitAny": true,
@@ -26,5 +26,8 @@
     "strict": true,
     "strictPropertyInitialization": true,
     "target": "ES2018"
-  }
+  },
+  "include": [
+    "src"
+  ]
 }
