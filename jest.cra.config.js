@@ -15,5 +15,5 @@ const isEjecting = false;
 
 module.exports = {
   ...createJestConfig(resolveReactScriptsModule, rootDir, isEjecting),
-  displayName: 'frontend',
+  displayName: 'cra',
 };
