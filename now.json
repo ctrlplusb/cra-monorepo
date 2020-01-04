@@ -59,6 +59,9 @@
       "dest": "/frontend/sockjs-node"
     },
     {
+      "handle": "filesystem"
+    },
+    {
       "src": "/(.*)",
       "headers": { "cache-control": "s-maxage=0" },
       "dest": "/frontend/index.html"

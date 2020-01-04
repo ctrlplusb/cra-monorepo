@@ -9,11 +9,11 @@
     "universal": "^1.0.0"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.23",
-    "@types/node": "^12.12.18",
+    "@types/jest": "^24.0.25",
+    "@types/node": "^12.12.21",
     "jest": "^24.9.0",
     "prettier": "^1.19.1",
     "ts-jest": "^24.2.0",
-    "typescript": "3.7.3"
+    "typescript": "3.7.4"
   }
 }
