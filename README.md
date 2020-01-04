@@ -6,11 +6,11 @@ Example deployment: https://cra-monorepo.ctrlplusb.now.sh/
 
 ## Features
 
-- Yarn + Yarn workspaces
+- Yarn
 - Backend: Node lambdas
 - Frontend: Create React App with React Fast Refresh and Storybook
-- Universal code (i.e. shared between frontend and backend)
-- Fully TypeScript'ed
+- Shared code between frontend and backend
+- Fully TypeScript'ed with same TSConfig across entire codebase
 - Consistent ESLint with Typescript parser across entire codebase
 - Run Jest from the root
 - Prettier configuration

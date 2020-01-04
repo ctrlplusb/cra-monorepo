@@ -21,8 +21,9 @@ module.exports = override(
     ? addWebpackPlugin(new ReactRefreshPlugin())
     : undefined,
   // Add support for transpiling local package imports
-  babelInclude([path.resolve('src'), path.resolve('./universal')]),
+  babelInclude([path.resolve('src'), path.resolve('./lib')]),
   // Disable CRA lint in favour of project lint
   disableEsLint(),
+  // Allow relative imports outside of src
   removeModuleScopePlugin(),
 );

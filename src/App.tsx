@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import appName from '../universal/app-name';
-import currentTime from '../universal/current-time';
+import appName from '../lib/app-name';
+import currentTime from '../lib/current-time';
 import './App.css';
 
 const App: React.FC = () => {
