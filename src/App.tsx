@@ -7,9 +7,9 @@ const App: React.FC = () => {
   const [serverDate, setServerDate] = useState<string>();
   useEffect(() => {
     fetch('/api/time')
-      .then(response => response.text())
-      .then(text => setServerDate(text));
-  }, [setServerDate]);
+      .then((response) => response.text())
+      .then((text) => setServerDate(text));
+  }, []);
 
   return (
     <div className="App">

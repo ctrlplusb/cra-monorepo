@@ -3,8 +3,5 @@ export default function currentTime(): string {
   return `${now
     .getHours()
     .toString()
-    .padStart(2, '0')}:${now
-    .getMinutes()
-    .toString()
-    .padStart(2, '0')}`;
+    .padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
 }
